@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> CVSU Inventory </title>
+    <link rel="stylesheet" href="src/css/home.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="details">
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="home.html" class="active">
+            <i class='bx bx-home-alt' ></i>
+            <span class="links_name">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="product.html">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Product</span>
+          </a>
+        </li>
+        <li>
+          <a href="barcode.html">
+            <i class='bx bx-barcode-reader' ></i>
+            <span class="links_name">Barcode</span>
+          </a>
+        </li>
+        <li>
+          <a href="report.html">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Report</span>
+          </a>
+        </li>
+        <li>
+          <a href="setting.html">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Setting</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="index.html">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Setting</span>
+      </div>
+      
+    </nav>
+
+    <div class="home-content">
+      <!-- <div class = "loginBody">
+        
+        <form action = "">
+            <h1>General Settings</h1>
+            <div class = "loginInputsContainer">
+                <label for="">Username</label>
+                <input placeholder = "username" type="text" id="email" required/>
+            </div>
+            <div class="loginInputsContainer">
+                <label for="">Current Password</label>
+                <input placeholder="Current Password" type="password" id="pass" required/>
+            </div> -->
+             <!-- NEW PASSWPRD  -->
+             <!-- <div class="loginInputsContainer">
+                <label for="">New Password</label>
+                <input placeholder="New Password" type="password" id="pass" required/>
+            </div> -->
+            <!-- Retype Password -->
+            <!-- <div class="loginInputsContainer">
+              <label for="">Retype Password</label>
+              <input placeholder="Retype Password" type="password" id="pass" required/>
+          </div>
+            <div class="loginButtonContainer">
+                <button onclick="logIn()">Save</button>
+            </div>
+        </form>
+      </div> -->
+      <div class="form-container">
+        <h2>Register</h2>
+        <form action="#" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    </div>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+
+
+ </script>
+
+</body>
+</html>

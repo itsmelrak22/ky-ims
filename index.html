@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISBS Login - Supply Inventory System using Barcode Scanner</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="loginHeader">
+            <h1>SISBS</h1>
+            <p>Supply Inventory System using Barcode Scanner</p>
+        </div>
+        
+        <div class="loginBody">
+            <form action="login.php" method="post">
+                <div class="loginInputsContainer">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                
+                    <div class="loginButton"> 
+                        <input type="submit" value="Login">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
